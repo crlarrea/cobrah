@@ -1,0 +1,41 @@
+/* Font Sizes */
+$xxs: 7px;
+$xs: 12px;
+$s: 14px;
+$m: 16px;
+$l: 18px;
+$xl: 20px;
+$xxl: 24px;
+$xxl: 30px;
+$xxxl: 36px;
+$h: 48px;
+$xh: 60px;
+$xxh: 72px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
