@@ -6,6 +6,7 @@ import { Tours } from "../components/Tours";
 import { Nav } from "../components/Nav";
 import { Merch } from "../components/Merch";
 import { Music } from "../components/Music";
+import { Gallery } from "../components/Gallery";
 
 export const MainRoutes = () => (
   <>
@@ -21,6 +22,7 @@ export const MainRoutes = () => (
           <Route path="/tours" element={<Tours />} />
           <Route path="/merch" element={<Merch />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>
       <footer>

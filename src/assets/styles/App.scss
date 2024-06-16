@@ -211,7 +211,7 @@ h2 {
         cursor: pointer;
         &:hover {
           transform: scale(1.2);
-          
+
           img {
             filter: brightness(0.3);
             border: 2px solid white;
@@ -316,5 +316,41 @@ h2 {
         }
       }
     }
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  overflow: hidden;
+  article {
+    display: flex;
+
+    &:last-of-type {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      div {
+        flex: 0 0 25%;
+
+        @for $i from 1 through 25 {
+          &:nth-last-of-type(#{$i}) {
+            animation: scrollImage 20s linear #{$i}s infinite forwards;
+          }
+        }
+
+        img {
+          width: 100%;
+          border-radius: $xxs;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scrollImage {
+  100% {
+    transform: translateY(200%);
   }
 }

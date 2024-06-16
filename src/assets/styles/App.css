@@ -298,4 +298,107 @@ h2 {
   border: 2px dashed black;
 }
 
+.gallery {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery article {
+  display: flex;
+}
+.gallery article:last-of-type {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gallery article:last-of-type div {
+  flex: 0 0 25%;
+}
+.gallery article:last-of-type div:nth-last-of-type(1) {
+  animation: scrollImage 20s linear 1s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(2) {
+  animation: scrollImage 20s linear 2s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(3) {
+  animation: scrollImage 20s linear 3s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(4) {
+  animation: scrollImage 20s linear 4s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(5) {
+  animation: scrollImage 20s linear 5s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(6) {
+  animation: scrollImage 20s linear 6s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(7) {
+  animation: scrollImage 20s linear 7s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(8) {
+  animation: scrollImage 20s linear 8s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(9) {
+  animation: scrollImage 20s linear 9s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(10) {
+  animation: scrollImage 20s linear 10s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(11) {
+  animation: scrollImage 20s linear 11s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(12) {
+  animation: scrollImage 20s linear 12s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(13) {
+  animation: scrollImage 20s linear 13s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(14) {
+  animation: scrollImage 20s linear 14s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(15) {
+  animation: scrollImage 20s linear 15s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(16) {
+  animation: scrollImage 20s linear 16s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(17) {
+  animation: scrollImage 20s linear 17s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(18) {
+  animation: scrollImage 20s linear 18s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(19) {
+  animation: scrollImage 20s linear 19s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(20) {
+  animation: scrollImage 20s linear 20s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(21) {
+  animation: scrollImage 20s linear 21s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(22) {
+  animation: scrollImage 20s linear 22s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(23) {
+  animation: scrollImage 20s linear 23s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(24) {
+  animation: scrollImage 20s linear 24s infinite forwards;
+}
+.gallery article:last-of-type div:nth-last-of-type(25) {
+  animation: scrollImage 20s linear 25s infinite forwards;
+}
+.gallery article:last-of-type div img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+@keyframes scrollImage {
+  100% {
+    transform: translateY(200%);
+  }
+}
+
 /*# sourceMappingURL=App.css.map */
