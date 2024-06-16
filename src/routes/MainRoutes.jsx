@@ -17,6 +17,7 @@ export const MainRoutes = () => (
       <main>
         <Hero />
         <Routes>
+        <Route path="/" element={<Music />} />
           <Route path="/tours" element={<Tours />} />
           <Route path="/merch" element={<Merch />} />
           <Route path="/music" element={<Music />} />

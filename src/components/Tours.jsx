@@ -9,7 +9,10 @@ export const Tours = () => {
 
   const getGigs = async () => {
     if (tours.length === 0) {
-      let { data: data, error } = await supabase.from("gigs").select("*");
+      let { data: data, error } = await supabase.from("gigs").select("*").order('event_date', { ascending: true })
+
+
+      ;
       setTours(data);
     }
   };

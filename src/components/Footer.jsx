@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaXTwitter,
@@ -40,10 +41,19 @@ export const Footer = () => {
         <ul>
           {icons.map((el, index) => (
             <li key={`social-${index}`}>
-              <a href={el.url}>{el.icon}</a>
+              <Link to={el.url}>{el.icon}</Link>
             </li>
           ))}
         </ul>
+      </article>
+      <article>
+        <Link to="https://www.cobrahcore.com">
+          official site - cobrahcore.com
+        </Link>
+        
+        <Link to="https://crlarrea.github.io">
+          crlarrea &copy;{new Date(Date()).getFullYear()}
+        </Link>
       </article>
     </>
   );

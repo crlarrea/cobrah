@@ -11,7 +11,7 @@ main {
 }
 section {
   &:not(:first-of-type) {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 }
 .hero {
@@ -79,23 +79,57 @@ footer {
   bottom: 0;
   padding: $s;
   display: flex;
-
-  ul {
-    list-style-type: none;
-    display: inline-flex;
-    column-gap: $s;
-    li {
-      a {
-        transition: all 0.3s;
-        color: black;
-        display: block;
-        padding: $xxs;
-        height: 30px;
-        border-radius: 100%;
-        aspect-ratio: 1;
-        &:hover {
-          background-color: black;
-          color: white;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  article {
+    &:first-of-type {
+      ul {
+        list-style-type: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        column-gap: $xxs;
+        li {
+          a {
+            transition: all 0.3s;
+            color: black;
+            display: block;
+            padding: $xxs;
+            height: 30px;
+            border-radius: 100%;
+            aspect-ratio: 1;
+            &:hover {
+              background-color: black;
+              color: white;
+              transform: translateY(-$xxs);
+            }
+          }
+        //   &:not(:last-of-type) {
+        //     flex: 0 0 100%;
+        //     a {
+        //       all: unset;
+        //       cursor: pointer;
+        //       font: {
+        //         size: $xs;
+        //       }
+        //       color: white;
+        //     }
+        //   }
+        }
+      }
+    }
+    &:last-of-type{
+      display: flex;
+      flex-flow: column nowrap;
+      column-gap: $m;
+      padding-left: $xs;
+      a{transition: all 0.3s;
+        color: rgba(white,0.5);
+        text-decoration: none;
+        font:{
+          size: $xs;
+        }
+        &:hover{
+          color:white;
         }
       }
     }
@@ -107,7 +141,6 @@ h2 {
     size: $h;
   }
   margin-bottom: $l;
-  //   color: rgba(red, 0.6)
 }
 
 .tours {
@@ -129,11 +162,14 @@ h2 {
         row-gap: $s;
         tr {
           display: flex;
-          justify-content: space-evenly;
-          // column-gap: $xh;
+          column-gap: $xh;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(white, 0.2);
+          }
+
           td {
-            max-width: 15ch;
-            display: inline-flex;
+            width: 15ch;
           }
         }
       }
