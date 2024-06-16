@@ -47,11 +47,11 @@ export const Footer = () => {
         </ul>
       </article>
       <article>
-        <Link to="https://www.cobrahcore.com">
+        <Link to="https://www.cobrahcore.com" target="_blank">
           official site - cobrahcore.com
         </Link>
         
-        <Link to="https://crlarrea.github.io">
+        <Link to="https://crlarrea.github.io" target="_blank">
           crlarrea &copy;{new Date(Date()).getFullYear()}
         </Link>
       </article>
