@@ -41,7 +41,7 @@ export const Merch = () => {
                 </p>
                 <img src={el.image_url} />
 
-                {el.item_name}
+                <p>{el.item_name}</p>
               </div>
             </Link>
           );
