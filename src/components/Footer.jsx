@@ -38,8 +38,8 @@ export const Footer = () => {
     <>
       <article>
         <ul>
-          {icons.map((el) => (
-            <li>
+          {icons.map((el, index) => (
+            <li key={`social-${index}`}>
               <a href={el.url}>{el.icon}</a>
             </li>
           ))}

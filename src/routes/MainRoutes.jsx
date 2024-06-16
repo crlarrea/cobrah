@@ -1,24 +1,25 @@
 import React from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
-import { Main } from "../components/Main";
-import { SpotifyPlayer } from "../components/SpotifyPlayer";
+import { Hero } from "../components/Hero";
 import { Footer } from "../components/Footer";
+import { Tours } from "../components/Tours";
+import { Nav } from "../components/Nav";
+import { Merch } from "../components/Merch";
+import { Music } from "../components/Music";
 
 export const MainRoutes = () => (
   <>
     <BrowserRouter>
-      <header></header>
+      <header>
+        <Nav />
+      </header>
 
       <main>
+        <Hero />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Main />
-              </>
-            }
-          />
+          <Route path="/tours" element={<Tours />} />
+          <Route path="/merch" element={<Merch />} />
+          <Route path="/music" element={<Music />} />
         </Routes>
       </main>
       <footer>

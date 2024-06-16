@@ -33,39 +33,63 @@ main {
   height: 100%;
 }
 
+main {
+  display: flex;
+}
+
+section:not(:first-of-type) {
+  margin-top: 150px;
+}
+
 .hero {
   display: flex;
   height: 100%;
-}
-.hero article {
   flex: 0 0 50%;
 }
-.hero article:first-of-type {
-  position: relative;
+.hero article {
   overflow: hidden;
+  flex: 0 0 100%;
+  position: relative;
 }
-.hero article:first-of-type video {
+.hero article video {
   position: absolute;
-  left: -50%;
+  left: -70%;
   height: 100%;
 }
-.hero article:first-of-type div {
+.hero article div {
   position: absolute;
-  display: block;
+  height: 100%;
   width: 100%;
-  height: 100%;
-  bottom: 0;
   right: 0;
-  background: linear-gradient(270deg, hsl(0, 0%, 0%) 1%, transparent 100%);
+  background: linear-gradient(260deg, hsl(0, 0%, 0%) 15%, rgba(255, 0, 0, 0.5) 90%);
 }
-.hero article:last-of-type {
+
+header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+nav {
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 48px;
-  padding: 14px 60px 14px 0;
+  align-items: flex-end;
+  row-gap: 14px;
+  padding-top: 16px;
+  padding-right: 48px;
 }
-.hero article:last-of-type img {
-  width: 100%;
+nav img {
+  width: 50%;
+  z-index: 1;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  column-gap: 14px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 footer {

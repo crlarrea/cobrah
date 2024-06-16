@@ -6,41 +6,67 @@
 
 @import "UISystem";
 
+main {
+  display: flex;
+}
+section {
+    &:not(:first-of-type){
+        margin-top: 150px;
+    }
+}
 .hero {
   display: flex;
   height: 100%;
+  flex: 0 0 50%;
   article {
-    flex: 0 0 50%;
-    &:first-of-type {
-      position: relative;
-      overflow: hidden;
-      video {
-        position: absolute;
-        left: -50%;
-        height: 100%;
-      }
-      div {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        background: linear-gradient(
-          270deg,
-          hsla(0, 0%, 0%, 1) 1%,
-          transparent 100%
-        );
-      }
+    overflow: hidden;
+    flex: 0 0 100%;
+    position: relative;
+    video {
+      position: absolute;
+      left: -70%;
+      height: 100%;
     }
-    &:last-of-type {
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: $h;
-      img {
-        width: 100%;
+    div {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      right: 0;
+      background: linear-gradient(
+       260deg,
+        hsla(0, 0%, 0%, 1) 15%,
+        rgba(red,0.5) 90%
+      );
+    }
+  }
+}
+header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  row-gap: $s;
+  padding: {
+    top: $m;
+    right: $h;
+  }
+  img {
+    width: 50%;
+    z-index: 1;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: $s;
+    li {
+      a {
+        color: white;
+        text-decoration: none;
       }
-      padding: $s $xh $s 0;
     }
   }
 }
@@ -51,24 +77,24 @@ footer {
   padding: $s;
   display: flex;
 
-
   ul {
     list-style-type: none;
     display: inline-flex;
     column-gap: $s;
-    li{
-        a{  transition: all 0.3s;
-            color:black;
-            display: block;
-            padding:$xxs;
-            height: 30px;
-            border-radius: 100%;
-            aspect-ratio: 1;
-            &:hover{
-                background-color: black;
-                color: white;
-            }
+    li {
+      a {
+        transition: all 0.3s;
+        color: black;
+        display: block;
+        padding: $xxs;
+        height: 30px;
+        border-radius: 100%;
+        aspect-ratio: 1;
+        &:hover {
+          background-color: black;
+          color: white;
         }
+      }
     }
   }
 }
