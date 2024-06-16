@@ -25,9 +25,6 @@ export const Music = () => {
     <section className="music">
       <article>
         <h2>music</h2>
-        <SpotifyPlayer />
-      </article>
-      <article>
         {music.map((el) => {
           return (
             <div key={el.id}>
@@ -36,6 +33,9 @@ export const Music = () => {
             </div>
           );
         })}
+      </article>
+      <article>
+        <SpotifyPlayer />
       </article>
     </section>
   );
