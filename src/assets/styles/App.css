@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+/* Fon Families*/
+@font-face {
+  font-family: "Mono Medium";
+  src: url("../fonts/DMMono-Medium.ttf");
+}
 /* Font Sizes */
 * {
   box-sizing: border-box;
@@ -15,6 +20,7 @@ html {
   scroll-behavior: smooth;
   display: flex;
   justify-content: center;
+  font-family: "Mono Medium";
 }
 
 #root {
@@ -61,7 +67,7 @@ section:not(:first-of-type) {
   height: 100%;
   width: 100%;
   right: 0;
-  background: linear-gradient(260deg, hsl(0, 0%, 0%) 15%, rgba(255, 0, 0, 0.5) 90%);
+  background: linear-gradient(260deg, hsl(0, 0%, 0%) 15%, rgba(255, 0, 0, 0.6) 90%);
 }
 
 header {
@@ -115,6 +121,40 @@ footer ul li a {
 footer ul li a:hover {
   background-color: black;
   color: white;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 18px;
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.tours table {
+  border-collapse: collapse;
+}
+.tours table thead {
+  display: none;
+}
+.tours table tbody {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 14px;
+}
+.tours table tbody tr {
+  display: flex;
+  column-gap: 60px;
+}
+.tours table tbody tr td {
+  max-width: 15ch;
+  display: inline-flex;
+}
+
+.music {
+  width: 100%;
+  display: flex;
+}
+.music article {
+  flex: 0 0 100%;
 }
 
 /*# sourceMappingURL=App.css.map */

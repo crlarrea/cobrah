@@ -10,9 +10,9 @@ main {
   display: flex;
 }
 section {
-    &:not(:first-of-type){
-        margin-top: 150px;
-    }
+  &:not(:first-of-type) {
+    margin-top: 150px;
+  }
 }
 .hero {
   display: flex;
@@ -33,9 +33,9 @@ section {
       width: 100%;
       right: 0;
       background: linear-gradient(
-       260deg,
+        260deg,
         hsla(0, 0%, 0%, 1) 15%,
-        rgba(red,0.5) 90%
+        rgba(red, 0.6) 90%
       );
     }
   }
@@ -97,4 +97,43 @@ footer {
       }
     }
   }
+}
+
+h2 {
+  font: {
+    size: $h;
+  }
+  margin-bottom: $l;
+  color: rgba(red, 0.6)
+}
+
+.tours {
+  table {
+    border-collapse: collapse;
+    thead {
+      display: none;
+    }
+    tbody {
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: $s;
+       tr {
+        display: flex;
+        // justify-content: space-between;
+        column-gap:$xh;
+        td{
+            max-width: 15ch;
+            display: inline-flex;
+        }
+      }
+    }
+  }
+}
+
+.music{
+    width: 100%;
+    display: flex;
+    article{
+        flex: 0 0 100%;
+    }
 }

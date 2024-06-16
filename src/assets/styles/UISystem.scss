@@ -1,3 +1,10 @@
+/* Fon Families*/
+
+@font-face {
+  font-family: "Mono Medium";
+  src: url("../fonts/DMMono-Medium.ttf");
+}
+
 /* Font Sizes */
 $xxs: 7px;
 $xs: 12px;
@@ -22,6 +29,9 @@ html {
   scroll-behavior: smooth;
   display: flex;
   justify-content: center;
+  font: {
+    family: "Mono Medium";
+  }
 }
 
 #root {
