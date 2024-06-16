@@ -350,6 +350,9 @@ h2 {
 }
 
 @keyframes scrollImage {
+  0%{
+    transform: translateY(-200%);
+  }
   100% {
     transform: translateY(200%);
   }
