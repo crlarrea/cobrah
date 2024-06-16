@@ -31,8 +31,8 @@ export const Merch = () => {
       <article>
         {merch.map((el) => {
           return (
-            <Link to={el.link_url} target="_blank">
-              <div key={el.id}>
+            <Link to={el.link_url}  key={el.id} target="_blank">
+              <div>
                 <p>
                   {new Intl.NumberFormat("ja-JP", {
                     style: "currency",
