@@ -31,18 +31,19 @@ export const Merch = () => {
       <article>
         {merch.map((el) => {
           return (
-            <div key={el.id}>
-              <p>
-                {new Intl.NumberFormat("ja-JP", {
-                  style: "currency",
-                  currency: "USD",
-                }).format(el.item_price)}
-              </p>
-              <img src={el.image_url} />
-              <Link to={el.link_url} target="_blank">
+            <Link to={el.link_url} target="_blank">
+              <div key={el.id}>
+                <p>
+                  {new Intl.NumberFormat("ja-JP", {
+                    style: "currency",
+                    currency: "USD",
+                  }).format(el.item_price)}
+                </p>
+                <img src={el.image_url} />
+
                 {el.item_name}
-              </Link>
-            </div>
+              </div>
+            </Link>
           );
         })}
       </article>
