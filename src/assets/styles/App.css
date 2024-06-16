@@ -181,8 +181,8 @@ h2 {
   border-radius: 7px;
 }
 .tours article:last-of-type table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: rgb(255, 166, 166);
+  background-color: white;
+  color: black;
 }
 .tours article:last-of-type table tbody tr td {
   width: 20ch;
