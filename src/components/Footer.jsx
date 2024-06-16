@@ -41,7 +41,9 @@ export const Footer = () => {
         <ul>
           {icons.map((el, index) => (
             <li key={`social-${index}`}>
-              <Link to={el.url}>{el.icon}</Link>
+              <Link to={el.url} target="_blank">
+                {el.icon}
+              </Link>
             </li>
           ))}
         </ul>
@@ -50,7 +52,7 @@ export const Footer = () => {
         <Link to="https://www.cobrahcore.com" target="_blank">
           official site - cobrahcore.com
         </Link>
-        
+
         <Link to="https://crlarrea.github.io" target="_blank">
           crlarrea &copy;{new Date(Date()).getFullYear()}
         </Link>

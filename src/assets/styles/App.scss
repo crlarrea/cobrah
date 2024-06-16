@@ -64,10 +64,11 @@ nav {
     column-gap: $s;
     li {
       a {
+        transition: all 0.3s;
         color: white;
         text-decoration: none;
         &:hover {
-          color: rgba(red, 0.7);
+          color: $red500;
         }
       }
     }
@@ -103,33 +104,34 @@ footer {
               transform: translateY(-$xxs);
             }
           }
-        //   &:not(:last-of-type) {
-        //     flex: 0 0 100%;
-        //     a {
-        //       all: unset;
-        //       cursor: pointer;
-        //       font: {
-        //         size: $xs;
-        //       }
-        //       color: white;
-        //     }
-        //   }
+          //   &:not(:last-of-type) {
+          //     flex: 0 0 100%;
+          //     a {
+          //       all: unset;
+          //       cursor: pointer;
+          //       font: {
+          //         size: $xs;
+          //       }
+          //       color: white;
+          //     }
+          //   }
         }
       }
     }
-    &:last-of-type{
+    &:last-of-type {
       display: flex;
       flex-flow: column nowrap;
       column-gap: $m;
       padding-left: $xs;
-      a{transition: all 0.3s;
-        color: rgba(white,0.5);
+      a {
+        transition: all 0.3s;
+        color: rgba(white, 0.5);
         text-decoration: none;
-        font:{
+        font: {
           size: $xs;
         }
-        &:hover{
-          color:white;
+        &:hover {
+          color: white;
         }
       }
     }
@@ -146,30 +148,38 @@ h2 {
 .tours {
   padding-bottom: $xh;
   width: 100%;
-  overflow: scroll;
+
   article {
-    display: flex;
-    flex-flow: column nowrap;
+    overflow: hidden;
+    &:last-of-type {
+      height: 90%;
+      overflow: scroll;
+      table {
+        border-collapse: collapse;
 
-    table {
-      border-collapse: collapse;
-      thead {
-        display: none;
-      }
-      tbody {
-        display: flex;
-        flex-flow: column nowrap;
-        row-gap: $s;
-        tr {
+        thead {
+          display: none;
+        }
+        tbody {
           display: flex;
-          column-gap: $xh;
-          cursor: pointer;
-          &:hover {
-            background-color: rgba(white, 0.2);
-          }
+          flex-flow: column nowrap;
 
-          td {
-            width: 15ch;
+          tr {
+            transition: all 0.3s;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+
+            border-radius: $xxs;
+            &:hover {
+              background-color: rgba(white, 0.1);
+              color: $red500;
+            }
+
+            td {
+              width: 20ch;
+              padding: $s;
+            }
           }
         }
       }
@@ -183,5 +193,69 @@ h2 {
   display: flex;
   article {
     flex: 0 0 100%;
+  }
+}
+
+.merch {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+
+  article {
+    &:last-of-type {
+      overflow-y: scroll;
+      display: inherit;
+      flex-flow: row wrap;
+      row-gap: $m;
+      column-gap: $m;
+      align-items: stretch;
+
+      div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        row-gap: $l;
+        border-radius: $xxs;
+        position: relative;
+        border: 2px solid rgba(white, 0.2);
+        flex: 0 0 30%;
+        padding: $s;
+        cursor: pointer;
+        &:hover {
+          transition: all 0.3s;
+          background-color: rgba(white, 0.9);
+          color: black;
+          a {
+            color: black;
+          }
+          img {
+            transition: all 0.3s;
+            filter: drop-shadow(0 0 0.75rem rgba(black, 0.3));
+            transform: scale(1.2);
+          }
+        }
+
+        a {
+          color: white;
+          text: {
+            decoration: none;
+            align: center;
+          }
+        }
+        img {
+          width: 150px;
+        }
+        p {
+          display: inline-flex;
+          justify-content: flex-end;
+          align-self: flex-end;
+          padding: $xxs;
+          border: 2px dashed black;
+          font:{
+            size: $xs;
+          }
+        }
+      }
+    }
   }
 }

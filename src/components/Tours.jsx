@@ -8,13 +8,12 @@ export const Tours = () => {
   const [tours, setTours] = useState([]);
 
   const getGigs = async () => {
-    if (tours.length === 0) {
-      let { data: data, error } = await supabase.from("gigs").select("*").order('event_date', { ascending: true })
+    let { data: data, error } = await supabase
+      .from("gigs")
+      .select("*")
+      .order("event_date", { ascending: true });
 
-
-      ;
-      setTours(data);
-    }
+    setTours(data);
   };
 
   useEffect(() => {
@@ -25,6 +24,8 @@ export const Tours = () => {
     <section className="tours">
       <article>
         <h2>tours</h2>
+      </article>
+      <article>
         <table>
           <thead>
             <tr>
