@@ -34,7 +34,11 @@ export const Tours = () => {
             {tours.map((el, index) => {
               return (
                 <tr key={`event-${index}`}>
-                  <td>{el.event_date}</td>
+                  <td>
+                    {new Intl.DateTimeFormat("en-GB", {
+                      dateStyle: "short",
+                    }).format(new Date(el.event_date))}
+                  </td>
                   <td>{el.event_venue}</td>
                   <td>{el.event_location}</td>
                 </tr>

@@ -66,6 +66,9 @@ nav {
       a {
         color: white;
         text-decoration: none;
+        &:hover {
+          color: rgba(red, 0.7);
+        }
       }
     }
   }
@@ -104,36 +107,45 @@ h2 {
     size: $h;
   }
   margin-bottom: $l;
-//   color: rgba(red, 0.6)
+  //   color: rgba(red, 0.6)
 }
 
 .tours {
-  table {
-    border-collapse: collapse;
-    thead {
-      display: none;
-    }
-    tbody {
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: $s;
-       tr {
+  padding-bottom: $xh;
+  width: 100%;
+  overflow: scroll;
+  article {
+    display: flex;
+    flex-flow: column nowrap;
+
+    table {
+      border-collapse: collapse;
+      thead {
+        display: none;
+      }
+      tbody {
         display: flex;
-        // justify-content: space-between;
-        column-gap:$xh;
-        td{
+        flex-flow: column nowrap;
+        row-gap: $s;
+        tr {
+          display: flex;
+          justify-content: space-evenly;
+          // column-gap: $xh;
+          td {
             max-width: 15ch;
             display: inline-flex;
+          }
         }
       }
     }
   }
 }
 
-.music{
-    width: 100%;
-    display: flex;
-    article{
-        flex: 0 0 100%;
-    }
+.music {
+  padding-right: $h;
+  width: 100%;
+  display: flex;
+  article {
+    flex: 0 0 100%;
+  }
 }

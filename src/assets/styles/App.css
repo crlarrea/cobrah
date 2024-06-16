@@ -97,6 +97,9 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+nav ul li a:hover {
+  color: rgba(255, 0, 0, 0.7);
+}
 
 footer {
   position: absolute;
@@ -128,27 +131,37 @@ h2 {
   margin-bottom: 18px;
 }
 
-.tours table {
+.tours {
+  padding-bottom: 60px;
+  width: 100%;
+  overflow: scroll;
+}
+.tours article {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.tours article table {
   border-collapse: collapse;
 }
-.tours table thead {
+.tours article table thead {
   display: none;
 }
-.tours table tbody {
+.tours article table tbody {
   display: flex;
   flex-flow: column nowrap;
   row-gap: 14px;
 }
-.tours table tbody tr {
+.tours article table tbody tr {
   display: flex;
-  column-gap: 60px;
+  justify-content: space-evenly;
 }
-.tours table tbody tr td {
+.tours article table tbody tr td {
   max-width: 15ch;
   display: inline-flex;
 }
 
 .music {
+  padding-right: 48px;
   width: 100%;
   display: flex;
 }
