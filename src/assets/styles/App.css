@@ -27,6 +27,7 @@ html {
 #root {
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 body {
@@ -394,6 +395,34 @@ h2 {
 .gallery article:last-of-type div img {
   width: 100%;
   border-radius: 7px;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+.about article:first-of-type {
+  display: inherit;
+  flex-flow: inherit;
+  row-gap: 16px;
+}
+.about article:first-of-type p {
+  max-width: 55ch;
+  text-align: justify;
+  padding-right: 60px;
+  align-self: flex-end;
+}
+.about article:first-of-type p::first-letter {
+  padding-left: 14px;
+}
+.about article:last-of-type img {
+  position: absolute;
+  bottom: -50px;
+  right: 50%;
+  width: 100%;
+  opacity: 0.3;
 }
 
 @keyframes scrollImage {

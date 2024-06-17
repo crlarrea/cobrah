@@ -351,6 +351,44 @@ h2 {
   }
 }
 
+.about {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  // background-color: rgba(white, 0.2);
+  article {
+    &:first-of-type {
+      display: inherit;
+      flex-flow: inherit;
+      row-gap: $m;
+      
+      // padding:$h;
+      
+
+      p {
+        
+        max-width: 55ch;
+        text-align: justify;
+        padding-right: $xh;
+        &::first-letter {
+          padding-left: $s;
+        }
+        align-self: flex-end;
+      }
+    }
+    &:last-of-type {
+      img {
+        position: absolute;
+        bottom: -50px;
+        right: 50%;
+        width: 100%;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
 @keyframes scrollImage {
   0% {
     transform: translateY(-200%);
