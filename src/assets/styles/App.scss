@@ -352,27 +352,30 @@ h2 {
 }
 
 .about {
-  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
-  // background-color: rgba(white, 0.2);
+  background-color: rgba(white, 0.2);
+  flex: 0 0 80%;
+  justify-content: center;
+  
+
   article {
     &:first-of-type {
       display: inherit;
       flex-flow: inherit;
       row-gap: $m;
+      padding-left: $xh;
 
       // padding:$h;
 
       p {
         max-width: 55ch;
         text-align: justify;
-        padding-right: $xh;
         &::first-letter {
           padding-left: $s;
         }
-        align-self: flex-end;
+        // align-self: flex-end;
       }
     }
     &:last-of-type {
@@ -382,6 +385,7 @@ h2 {
         right: 50%;
         width: 100%;
         opacity: 0.3;
+        filter: drop-shadow($xh #{-$h} $h rgba(white, 0.6));
       }
     }
   }
