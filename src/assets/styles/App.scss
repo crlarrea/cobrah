@@ -362,12 +362,10 @@ h2 {
       display: inherit;
       flex-flow: inherit;
       row-gap: $m;
-      
+
       // padding:$h;
-      
 
       p {
-        
         max-width: 55ch;
         text-align: justify;
         padding-right: $xh;
@@ -387,6 +385,10 @@ h2 {
       }
     }
   }
+}
+
+.active {
+  color: $red500;
 }
 
 @keyframes scrollImage {

@@ -425,6 +425,10 @@ h2 {
   opacity: 0.3;
 }
 
+.active {
+  color: rgb(255, 166, 166);
+}
+
 @keyframes scrollImage {
   0% {
     transform: translateY(-200%);
