@@ -15,7 +15,6 @@ export const Merch = () => {
       .order("item_name", { ascending: true });
 
     setMerch(data);
-    console.log(merch);
   };
 
   useEffect(() => {
@@ -31,7 +30,7 @@ export const Merch = () => {
       <article>
         {merch.map((el) => {
           return (
-            <Link to={el.link_url}  key={el.id} target="_blank">
+            <Link to={el.link_url} key={el.id} target="_blank">
               <div>
                 <p>
                   {new Intl.NumberFormat("ja-JP", {

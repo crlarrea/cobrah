@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.webp";
 export const Nav = () => {
-  const nav = ["tours", "merch", "music", "gallery"];
+  const nav = ["tours", "merch", "music", "about", "gallery"];
   return (
     <nav>
       <img src={logo} alt="" />

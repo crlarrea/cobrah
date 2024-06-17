@@ -7,6 +7,7 @@ import { Nav } from "../components/Nav";
 import { Merch } from "../components/Merch";
 import { Music } from "../components/Music";
 import { Gallery } from "../components/Gallery";
+import { About } from "../components/About";
 
 export const MainRoutes = () => (
   <>
@@ -22,6 +23,7 @@ export const MainRoutes = () => (
           <Route path="/tours" element={<Tours />} />
           <Route path="/merch" element={<Merch />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>

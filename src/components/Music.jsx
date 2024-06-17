@@ -15,7 +15,6 @@ export const Music = () => {
       .order("song_name", { ascending: true });
 
     setMusic(data);
-    console.log(music);
   };
 
   useEffect(() => {
