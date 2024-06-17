@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.webp";
 export const Nav = () => {
   const nav = ["tours", "merch", "music", "about", "gallery"];
-  const [selection, setSelection] = useState('about');
+  const [selection, setSelection] = useState(null);
   return (
     <nav>
       <img src={logo} alt="" />
