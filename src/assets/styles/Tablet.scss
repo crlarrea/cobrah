@@ -27,16 +27,10 @@
   }
 
   .about {
-    
-    
     article {
       &:first-of-type {
-        padding-right: $s;
-        overflow-y: scroll;
         p {
-          max-width: 33ch;
-        // padding-right:$xh;
-        
+          max-width: 35ch;
         }
       }
     }

@@ -354,29 +354,30 @@ h2 {
 .about {
   display: flex;
   flex-flow: column nowrap;
-  position: relative;
+  width: 100%;
   background-color: rgba(white, 0.2);
-
-  flex: 0 0 80vw;
-  justify-content: center;
+  position: relative;
 
   article {
     &:first-of-type {
-      z-index: 1;
-      padding:{
-        left:$h;
-        top:$xh;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-end;
+      overflow-y: scroll;
+      padding: {
+        top: $xh;
+        right: $xh;
       }
-      p{
+
+      p {
         max-width: 55ch;
         text-align: justify;
-        
       }
     }
     &:last-of-type {
       img {
         position: absolute;
-        bottom: -50px;
+        bottom: 0;
         right: 50%;
         width: 100%;
         opacity: 0.3;
@@ -401,3 +402,4 @@ h2 {
 }
 
 @import "Tablet.scss";
+@import "Mobile.scss";

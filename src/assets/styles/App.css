@@ -400,15 +400,17 @@ h2 {
 .about {
   display: flex;
   flex-flow: column nowrap;
-  position: relative;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
-  flex: 0 0 80vw;
-  justify-content: center;
+  position: relative;
 }
 .about article:first-of-type {
-  z-index: 1;
-  padding-left: 48px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  overflow-y: scroll;
   padding-top: 60px;
+  padding-right: 60px;
 }
 .about article:first-of-type p {
   max-width: 55ch;
@@ -416,7 +418,7 @@ h2 {
 }
 .about article:last-of-type img {
   position: absolute;
-  bottom: -50px;
+  bottom: 0;
   right: 50%;
   width: 100%;
   opacity: 0.3;
@@ -453,12 +455,13 @@ h2 {
   .music article {
     padding-right: 14px;
   }
-  .about article:first-of-type {
-    padding-right: 14px;
-    overflow-y: scroll;
-  }
   .about article:first-of-type p {
-    max-width: 33ch;
+    max-width: 35ch;
+  }
+}
+@media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
+  * {
+    display: none;
   }
 }
 
