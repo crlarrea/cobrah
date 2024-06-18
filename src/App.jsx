@@ -1,23 +1,19 @@
 import "./assets/styles/App.css";
 import React, { useState, useEffect } from "react";
 import { MainRoutes } from "./routes/MainRoutes";
-import { createClient } from "@supabase/supabase-js";
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { Helmet } from "react-helmet";
 
 function App() {
-  const [state, setState] = useState([{ tours: [] }]);
-
-  const getGigs = async () => {
-    let { data: data, error } = await supabase.from("gigs").select("*");
-    setState({ tours: data });
-  };
-
-  useEffect(() => {
-    getGigs();
-  }, []);
-  return <MainRoutes props={state} />;
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cobrah</title>
+        <link rel="canonical" href="https://cobrah.onrender.com" />
+      </Helmet>
+      <MainRoutes />
+    </>
+  );
 }
 
 export default App;

@@ -1,0 +1,44 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero {
+    flex: 0 0 45%;
+  }
+  .tours {
+    position: relative;
+    article {
+      &:last-of-type {
+        // background-color: red;
+        table {
+          position: absolute;
+          right: 10%;
+        }
+      }
+    }
+  }
+  .merch {
+    article {
+      justify-content: center;
+    }
+  }
+
+  .music {
+    article {
+      padding-right: $s;
+    }
+  }
+
+  .about {
+    
+    
+    article {
+      &:first-of-type {
+        padding-right: $s;
+        overflow-y: scroll;
+        p {
+          max-width: 33ch;
+        // padding-right:$xh;
+        
+        }
+      }
+    }
+  }
+}

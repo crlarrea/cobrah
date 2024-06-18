@@ -439,5 +439,30 @@ h2 {
     transform: translateY(200%);
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero {
+    flex: 0 0 45%;
+  }
+  .tours {
+    position: relative;
+  }
+  .tours article:last-of-type table {
+    position: absolute;
+    right: 10%;
+  }
+  .merch article {
+    justify-content: center;
+  }
+  .music article {
+    padding-right: 14px;
+  }
+  .about article:first-of-type {
+    padding-right: 14px;
+    overflow-y: scroll;
+  }
+  .about article:first-of-type p {
+    max-width: 33ch;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */
