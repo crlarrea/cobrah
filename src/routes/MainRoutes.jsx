@@ -19,13 +19,13 @@ export const MainRoutes = () => (
       <main>
         <Hero />
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Tours />} />
           <Route path="/tours" element={<Tours />} />
           <Route path="/merch" element={<Merch />} />
           <Route path="/music" element={<Music />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="*" element={<About />} />
+          <Route path="*" element={<Tours />} />
         </Routes>
       </main>
       <footer>
