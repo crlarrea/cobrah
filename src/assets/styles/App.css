@@ -412,7 +412,7 @@ h2 {
   padding-left: 60px;
 }
 .about article:first-of-type p {
-  max-width: 55ch;
+  max-width: 45ch;
   text-align: justify;
 }
 .about article:first-of-type p::first-letter {

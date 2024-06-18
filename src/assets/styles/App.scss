@@ -356,6 +356,7 @@ h2 {
   flex-flow: column nowrap;
   position: relative;
   background-color: rgba(white, 0.2);
+  
   flex: 0 0 80%;
   justify-content: center;
   
@@ -370,7 +371,7 @@ h2 {
       // padding:$h;
 
       p {
-        max-width: 55ch;
+        max-width: 45ch;
         text-align: justify;
         &::first-letter {
           padding-left: $s;
