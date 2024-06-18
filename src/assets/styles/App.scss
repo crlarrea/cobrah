@@ -356,28 +356,21 @@ h2 {
   flex-flow: column nowrap;
   position: relative;
   background-color: rgba(white, 0.2);
-  
-  flex: 0 0 80%;
+
+  flex: 0 0 80vw;
   justify-content: center;
-  
 
   article {
     &:first-of-type {
-      display: inherit;
-      flex-flow: inherit;
-      row-gap: $m;
-      padding-left: $xh;
-
-      // padding:$h;
-
-      p {
-        
-        max-width: 45ch;
+      z-index: 1;
+      padding:{
+        left:$h;
+        top:$xh;
+      }
+      p{
+        max-width: 55ch;
         text-align: justify;
-        &::first-letter {
-          padding-left: $s;
-        }
-        // align-self: flex-end;
+        
       }
     }
     &:last-of-type {
@@ -388,6 +381,7 @@ h2 {
         width: 100%;
         opacity: 0.3;
         filter: drop-shadow($xh #{-$h} $h rgba(white, 0.6));
+        z-index: 0;
       }
     }
   }
@@ -406,4 +400,4 @@ h2 {
   }
 }
 
-@import 'Tablet.scss';
+@import "Tablet.scss";

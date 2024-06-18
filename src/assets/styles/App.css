@@ -402,21 +402,17 @@ h2 {
   flex-flow: column nowrap;
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
-  flex: 0 0 80%;
+  flex: 0 0 80vw;
   justify-content: center;
 }
 .about article:first-of-type {
-  display: inherit;
-  flex-flow: inherit;
-  row-gap: 16px;
-  padding-left: 60px;
+  z-index: 1;
+  padding-left: 48px;
+  padding-top: 60px;
 }
 .about article:first-of-type p {
-  max-width: 45ch;
+  max-width: 55ch;
   text-align: justify;
-}
-.about article:first-of-type p::first-letter {
-  padding-left: 14px;
 }
 .about article:last-of-type img {
   position: absolute;
@@ -425,6 +421,7 @@ h2 {
   width: 100%;
   opacity: 0.3;
   filter: drop-shadow(60px -48px 48px rgba(255, 255, 255, 0.6));
+  z-index: 0;
 }
 
 .active {
