@@ -409,8 +409,8 @@ h2 {
   flex-flow: column nowrap;
   align-items: flex-end;
   overflow-y: scroll;
-  padding-top: 60px;
-  padding-right: 60px;
+  row-gap: 16px;
+  padding: 60px;
 }
 .about article:first-of-type p {
   max-width: 55ch;

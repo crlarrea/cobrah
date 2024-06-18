@@ -364,10 +364,8 @@ h2 {
       flex-flow: column nowrap;
       align-items: flex-end;
       overflow-y: scroll;
-      padding: {
-        top: $xh;
-        right: $xh;
-      }
+      row-gap: $m;;
+      padding: $xh;
 
       p {
         max-width: 55ch;
