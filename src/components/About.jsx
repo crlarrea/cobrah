@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section className="about">
       <article>
-        <h2>COBRAH</h2>
+        <h2>Meet COBRAH</h2>
         <p>
           Meet COBRAH, the electrifying Swedish artist redefining the music
           scene with her genre-blending, unapologetically bold sound! Bursting

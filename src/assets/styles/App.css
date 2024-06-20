@@ -459,10 +459,5 @@ h2 {
     max-width: 35ch;
   }
 }
-@media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
-  * {
-    display: none;
-  }
-}
 
 /*# sourceMappingURL=App.css.map */
