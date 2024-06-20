@@ -364,12 +364,25 @@ h2 {
       flex-flow: column nowrap;
       align-items: flex-end;
       overflow-y: scroll;
-      row-gap: $m;;
+      row-gap: $m;
       padding: $xh;
 
       p {
         max-width: 55ch;
         text-align: justify;
+      }
+      h2 {
+        display: inline-flex;
+        flex-flow: column nowrap;
+        font-size: $xxl;
+        row-gap:0;
+        
+        span {
+          color: $red500;
+          text-transform: uppercase;
+          font-size: $xh;
+          margin-top:-$xs;
+        }
       }
     }
     &:last-of-type {
