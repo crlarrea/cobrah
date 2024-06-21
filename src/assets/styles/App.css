@@ -474,6 +474,7 @@ h2 {
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
   main {
     flex-flow: column-reverse nowrap;
+    justify-content: space-between;
   }
   .hero {
     flex: 0 0 30%;
@@ -512,6 +513,7 @@ h2 {
     padding-bottom: 0;
   }
   .merch article:last-of-type {
+    flex: 0 0 100%;
     flex-flow: row nowrap;
     padding-bottom: 0;
     height: 250px;
@@ -520,7 +522,13 @@ h2 {
   }
   .merch article:last-of-type div {
     background-color: white;
+  }
+  .merch article:last-of-type div p {
     color: black;
+  }
+  .merch article:last-of-type div img {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
+    transform: scale(1.2) rotate(5deg);
   }
   .music {
     display: none;
