@@ -8,9 +8,10 @@ import { Merch } from "../components/Merch";
 import { Music } from "../components/Music";
 import { Gallery } from "../components/Gallery";
 import { About } from "../components/About";
-
+import { Helmet } from "react-helmet-async";
 export const MainRoutes = () => (
   <>
+
     <BrowserRouter>
       <header>
         <Nav />
