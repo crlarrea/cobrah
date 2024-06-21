@@ -2,11 +2,11 @@
   main {
     flex-flow: column-reverse nowrap;
     justify-content: space-between;
-    // height: 100%;
   }
 
   .hero {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
+
     article {
       video {
         left: 0;
@@ -122,8 +122,12 @@
           left: $xh;
           right: $l;
         }
-        p {
-          // max-width: 80ch;
+        h2{
+            span{
+                font:{
+                    size:$xxl;
+                }
+            }
         }
       }
       &:last-of-type {

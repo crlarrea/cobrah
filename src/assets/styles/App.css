@@ -477,7 +477,7 @@ h2 {
     justify-content: space-between;
   }
   .hero {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
   }
   .hero article video {
     left: 0;
@@ -559,6 +559,9 @@ h2 {
   .about article:first-of-type {
     padding-left: 60px;
     padding-right: 18px;
+  }
+  .about article:first-of-type h2 span {
+    font-size: 30px;
   }
   .about article:last-of-type {
     display: none;
