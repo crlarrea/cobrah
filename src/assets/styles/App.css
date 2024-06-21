@@ -513,14 +513,13 @@ h2 {
     padding-bottom: 0;
   }
   .merch article:last-of-type {
-    flex: 0 0 100%;
     flex-flow: row nowrap;
     padding-bottom: 0;
-    height: 250px;
     overflow-y: visible;
     overflow-x: scroll;
   }
   .merch article:last-of-type div {
+    max-height: 250px;
     background-color: white;
   }
   .merch article:last-of-type div p {
@@ -533,7 +532,7 @@ h2 {
   .music {
     padding-left: 18px;
     padding-right: 18px;
-    padding-left: 14px;
+    padding-bottom: 0;
     row-gap: 48px;
   }
   .music article {

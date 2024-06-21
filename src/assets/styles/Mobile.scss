@@ -61,13 +61,13 @@
 
     article {
       &:last-of-type {
-        flex: 0 0 100%;
         flex-flow: row nowrap;
         padding-bottom: 0;
-        height: 250px;
         overflow-y: visible;
         overflow-x: scroll;
+
         div {
+          max-height: 250px;
           p {
             color: black;
           }
@@ -86,9 +86,7 @@
     padding: {
       left: $l;
       right: $l;
-    }
-    padding: {
-      left: $s;
+      bottom: 0;
     }
     row-gap: $h;
     article {
@@ -132,8 +130,6 @@
         display: none;
       }
     }
-  }
-  .gallery {
   }
 
   nav {
