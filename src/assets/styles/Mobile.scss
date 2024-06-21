@@ -1,4 +1,124 @@
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
-    
+  main {
+    flex-flow: column-reverse nowrap;
+  }
 
+  .hero {
+    flex: 0 0 30%;
+    article {
+      video {
+        left: 0;
+      }
+      div {
+        background: linear-gradient(
+          180deg,
+          hsl(0, 0%, 0%) 1%,
+          rgba(255, 0, 0, 0.6) 99%
+        );
+      }
+    }
+  }
+  .tours {
+    overflow-y: hidden;
+    padding: {
+      left: $l;
+      right: $l;
+    }
+    padding-bottom: 0;
+
+    article {
+      &:last-of-type {
+        table {
+          tbody {
+            row-gap: $m;
+            width: 90vw;
+            tr {
+              flex-flow: row wrap;
+              padding: $s;
+              td {
+                padding: 0;
+                width: 50ch;
+                &:first-of-type {
+                  flex: 0 0 100%;
+                  color: $red500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .merch {
+    padding: {
+      left: $l;
+      right: $l;
+      bottom:0;
+    }
+    article {
+      &:last-of-type {
+        flex-flow: row nowrap;
+        padding-bottom: 0;
+        height: 250px;
+        overflow-y: visible;
+        overflow-x: scroll;
+        div {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .music {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .gallery {
+    display: none;
+  }
+
+  nav {
+    img {
+      width: 100%;
+    }
+    padding-right: 0;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+    justify-content: center;
+    article {
+      display: inherit;
+      justify-content: center;
+      &:first-of-type {
+        ul {
+          li {
+            a {
+              &:hover {
+                transform: none;
+                background-color: unset;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  h2{
+    font:{
+        size:$xxl;
+    }
+  }
 }
