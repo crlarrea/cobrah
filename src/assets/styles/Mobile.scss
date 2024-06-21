@@ -74,7 +74,6 @@
           background-color: white;
 
           img {
-            
             filter: drop-shadow(0 0 0.75rem rgba(black, 0.3));
             transform: scale(1.2) rotate(5deg);
           }
@@ -84,13 +83,57 @@
   }
 
   .music {
-    display: none;
+    padding: {
+      left: $l;
+      right: $l;
+    }
+    padding: {
+      left: $s;
+    }
+    row-gap: $h;
+    article {
+      padding: 0;
+
+      &:first-of-type {
+        justify-content: space-between;
+        column-gap: $xxs;
+        div {
+          p {
+            left: 10%;
+            font: {
+              size: $s;
+            }
+          }
+          &:hover {
+            z-index: 1;
+          }
+        }
+      }
+    }
+
+    h2 {
+      align-self: center;
+    }
   }
   .about {
-    display: none;
+    overflow-y: scroll;
+    background-color: transparent;
+    article {
+      &:first-of-type {
+        padding: {
+          left: $xh;
+          right: $l;
+        }
+        p {
+          // max-width: 80ch;
+        }
+      }
+      &:last-of-type {
+        display: none;
+      }
+    }
   }
   .gallery {
-    display: none;
   }
 
   nav {

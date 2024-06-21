@@ -531,12 +531,37 @@ h2 {
     transform: scale(1.2) rotate(5deg);
   }
   .music {
-    display: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-left: 14px;
+    row-gap: 48px;
+  }
+  .music article {
+    padding: 0;
+  }
+  .music article:first-of-type {
+    justify-content: space-between;
+    column-gap: 7px;
+  }
+  .music article:first-of-type div p {
+    left: 10%;
+    font-size: 14px;
+  }
+  .music article:first-of-type div:hover {
+    z-index: 1;
+  }
+  .music h2 {
+    align-self: center;
   }
   .about {
-    display: none;
+    overflow-y: scroll;
+    background-color: transparent;
   }
-  .gallery {
+  .about article:first-of-type {
+    padding-left: 60px;
+    padding-right: 18px;
+  }
+  .about article:last-of-type {
     display: none;
   }
   nav {
