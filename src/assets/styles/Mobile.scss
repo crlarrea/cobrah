@@ -5,11 +5,13 @@
   }
 
   .hero {
-    flex: 0 0 35%;
+    flex: 0 0 20%;
 
     article {
       video {
-        left: 0;
+        left: -$xh;
+
+        height: 200%;
       }
       div {
         background: linear-gradient(
@@ -30,6 +32,7 @@
 
     article {
       &:last-of-type {
+        padding-bottom: $xh;
         table {
           tbody {
             row-gap: $m;
@@ -66,16 +69,23 @@
         overflow-y: visible;
         overflow-x: scroll;
 
-        div {
-          max-height: 250px;
-          p {
-            color: black;
-          }
-          background-color: white;
+        a {
+          div {
+            max-height: 250px;
+            p {
+              color: black;
+            }
+            background-color: white;
 
-          img {
-            filter: drop-shadow(0 0 0.75rem rgba(black, 0.3));
-            transform: scale(1.2) rotate(5deg);
+            img {
+              filter: drop-shadow(0 0 0.75rem rgba(black, 0.3));
+              transform: scale(1.2) rotate(5deg);
+            }
+            &:hover {
+              img {
+                transform: none;
+              }
+            }
           }
         }
       }
@@ -122,12 +132,12 @@
           left: $xh;
           right: $l;
         }
-        h2{
-            span{
-                font:{
-                    size:$xxl;
-                }
+        h2 {
+          span {
+            font: {
+              size: $xxl;
             }
+          }
         }
       }
       &:last-of-type {

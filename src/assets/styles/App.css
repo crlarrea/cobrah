@@ -477,10 +477,11 @@ h2 {
     justify-content: space-between;
   }
   .hero {
-    flex: 0 0 35%;
+    flex: 0 0 20%;
   }
   .hero article video {
-    left: 0;
+    left: -60px;
+    height: 200%;
   }
   .hero article div {
     background: linear-gradient(180deg, hsl(0, 0%, 0%) 1%, rgba(255, 0, 0, 0.6) 99%);
@@ -490,6 +491,9 @@ h2 {
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 0;
+  }
+  .tours article:last-of-type {
+    padding-bottom: 60px;
   }
   .tours article:last-of-type table tbody {
     row-gap: 16px;
@@ -518,16 +522,19 @@ h2 {
     overflow-y: visible;
     overflow-x: scroll;
   }
-  .merch article:last-of-type div {
+  .merch article:last-of-type a div {
     max-height: 250px;
     background-color: white;
   }
-  .merch article:last-of-type div p {
+  .merch article:last-of-type a div p {
     color: black;
   }
-  .merch article:last-of-type div img {
+  .merch article:last-of-type a div img {
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
     transform: scale(1.2) rotate(5deg);
+  }
+  .merch article:last-of-type a div:hover img {
+    transform: none;
   }
   .music {
     padding-left: 18px;
