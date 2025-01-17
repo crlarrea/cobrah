@@ -325,27 +325,18 @@ h2 {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   article {
-    display: flex;
+    // display: flex;
 
     &:last-of-type {
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      div {
-        flex: 0 0 25%;
+      columns: 3;
 
-        @for $i from 1 through 25 {
-          &:nth-last-of-type(#{$i}) {
-            animation: scrollImage 20s linear #{$i}s infinite forwards;
-          }
-        }
 
-        img {
-          width: 100%;
-          border-radius: $xxs;
-        }
+      img {
+        width: 100%;
+        border-radius: $xxs;
+        margin-bottom: $xs;
       }
     }
   }
@@ -375,13 +366,13 @@ h2 {
         display: inline-flex;
         flex-flow: column nowrap;
         font-size: $xxl;
-        row-gap:0;
-        
+        row-gap: 0;
+
         span {
           color: $red500;
           text-transform: uppercase;
           font-size: $xh;
-          margin-top:-$xs;
+          margin-top: -$xs;
         }
       }
     }
